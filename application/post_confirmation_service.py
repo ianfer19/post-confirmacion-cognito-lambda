@@ -1,6 +1,6 @@
-from src.post_confirmation.domain.models import ConfirmedUser
-from src.post_confirmation.domain.exceptions import PostConfirmationError
-from src.post_confirmation.utils.logger import get_logger
+from domain.models import ConfirmedUser
+from domain.exceptions import PostConfirmationError
+from utils.logger import get_logger
 
 logger = get_logger(__name__)
 

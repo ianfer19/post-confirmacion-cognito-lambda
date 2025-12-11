@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import MagicMock
-from src.post_confirmation.application.post_confirmation_service import PostConfirmationService
-from src.post_confirmation.domain.exceptions import PostConfirmationError
+from application.post_confirmation_service import PostConfirmationService
+from domain.exceptions import PostConfirmationError
 
 EVENT = {
     "request": {

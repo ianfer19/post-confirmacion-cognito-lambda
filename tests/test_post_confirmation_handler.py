@@ -1,5 +1,5 @@
 from unittest.mock import MagicMock, patch
-from src.post_confirmation.handler import lambda_handler
+from lambda_function import lambda_handler
 
 EVENT = {
     "request": {

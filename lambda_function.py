@@ -1,8 +1,8 @@
 import os
-from src.post_confirmation.application.post_confirmation_service import PostConfirmationService
-from src.post_confirmation.infrastructure.dynamodb_repository import DynamoDBRepository
-from src.post_confirmation.utils.logger import get_logger
-from src.post_confirmation.domain.exceptions import PostConfirmationError
+from application.post_confirmation_service import PostConfirmationService
+from infrastructure.dynamodb_repository import DynamoDBRepository
+from utils.logger import get_logger
+from domain.exceptions import PostConfirmationError
 
 logger = get_logger(__name__)
 
