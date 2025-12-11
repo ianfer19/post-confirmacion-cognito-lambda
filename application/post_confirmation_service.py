@@ -14,9 +14,10 @@ class PostConfirmationService:
             logger.info("Processing Cognito PostConfirmation event")
 
             attrs = event["request"]["userAttributes"]
+            print(attrs)
 
             user = ConfirmedUser(
-                sub=attrs["sub"],
+                sub=attrs["userName"],
                 email=attrs["email"],
                 name=attrs.get("name", ""),
                 birthdate=attrs.get("birthdate", ""),
