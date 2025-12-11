@@ -1,6 +1,7 @@
 from domain.models import ConfirmedUser
 from domain.exceptions import PostConfirmationError
 from utils.logger import get_logger
+import datetime
 
 logger = get_logger(__name__)
 
@@ -23,7 +24,7 @@ class PostConfirmationService:
                 birthdate=attrs.get("birthdate", ""),
                 gender=attrs.get("gender", ""),
                 phone_number=attrs.get("phone_number", ""),
-                confirmed_at=event["request"]["creationDate"],
+                confirmed_at=datetime.datetime.now().isoformat(),
             )
 
             # Guardar en DynamoDB
