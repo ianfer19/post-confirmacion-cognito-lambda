@@ -20,5 +20,6 @@ class DynamoDBRepository:
                 "gender": user.gender,
                 "phone_number": user.phone_number,
                 "confirmed_at": user.confirmed_at,
+                "role": "user"
             }
         )
