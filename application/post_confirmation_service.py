@@ -17,7 +17,7 @@ class PostConfirmationService:
             print(attrs)
 
             user = ConfirmedUser(
-                sub=attrs["userName"],
+                sub=attrs["sub"],
                 email=attrs["email"],
                 name=attrs.get("name", ""),
                 birthdate=attrs.get("birthdate", ""),
